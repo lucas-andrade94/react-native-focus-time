@@ -6,7 +6,7 @@
   	Project Focus Time App
 </h4>
 
-<p>Project developed in a course from Zero To Mastery/</p>
+<p>Project developed in a course from Zero To Mastery</p>
 
 <p align="center">
 	<a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
