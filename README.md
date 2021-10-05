@@ -23,7 +23,7 @@ Project developed using the following technologies:
 
 
 ## 💻 Project
-**Focus Time is an app for Android and iOS thar helps you to focus for some time in one activity**
+**Focus Time is an app for Android and iOS that helps you to focus for some time in one activity**
 
 
 ## 💿 Instalation
