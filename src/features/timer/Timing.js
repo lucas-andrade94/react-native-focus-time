@@ -11,6 +11,12 @@ export const Timing = ({ onChangeTime }) => {
         <RoundedButton
           style={styles.button}
           size={75}
+          title={5}
+          onPress={() => onChangeTime(5)}
+        />
+        <RoundedButton
+          style={styles.button}
+          size={75}
           title={10}
           onPress={() => onChangeTime(10)}
         />

@@ -1,15 +1,15 @@
 import React, { useRef, useState } from 'react';
 import { View, StyleSheet, Text, Vibration, Platform } from 'react-native';
+import { useKeepAwake } from 'expo-keep-awake';
+import { ProgressBar } from 'react-native-paper';
 
 import { colors } from '../../utils/colors';
 import { Countdown } from '../../components/Contdown';
 import { RoundedButton } from '../../components/RoundedButton';
 import { spacing } from '../../utils/sizes';
-import { ProgressBar } from 'react-native-paper';
 import { Timing } from './Timing';
-import { useKeepAwake } from 'expo-keep-awake';
 
-const DEFAULT_TIME = 0.1;
+const DEFAULT_TIME = 5;
 
 export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
   useKeepAwake();
@@ -61,7 +61,7 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
       </View>
       <ProgressBar
         progress={progress}
-        color="#5E84E2"
+        color={colors.lightBlue}
         style={styles.progressBar}
       />
       <View style={styles.buttonWrapper}>
@@ -76,7 +76,7 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
       </View>
       <View style={styles.clearSubject}>
         <RoundedButton
-          title={'clear'}
+          title={'back'}
           size={50}
           onPress={() => clearSubject()}
         />

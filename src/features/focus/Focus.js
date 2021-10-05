@@ -15,6 +15,7 @@ export const Focus = ({ addSubject }) => {
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
+            placeholder="Activity"
             onSubmitEditing={({ nativeEvent }) => {
               setSubject(nativeEvent.text);
             }}
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontWeight: 'bold',
     fontSize: fontSizes.lg,
+    justifyContent: 'center',
   },
 
   inputContainer: {

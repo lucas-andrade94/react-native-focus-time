@@ -5,20 +5,20 @@ import { fontSizes, spacing } from '../../utils/sizes';
 import { RoundedButton } from '../../components/RoundedButton';
 import { colors } from '../../utils/colors';
 
-const HistoryItem = ({ item, index }) => {
+const HistoryItem = ({ item }) => {
   return <Text style={styles.historyItem(item.status)}>{item.subject}</Text>;
 };
 
 export const FocusHistory = ({ focusHistory, onClear }) => {
   return (
     <>
-      <SafeAreaView style={{ flex: 0.5, alignItems: 'center' }}>
+      <SafeAreaView style={styles.container}>
         {!!focusHistory.length && (
           <>
             <Text style={styles.title}>Things we've focused on</Text>
             <FlatList
               style={{ flex: 1 }}
-              contentContainerStyle={{ flex: 1, alignItems: 'center' }}
+              contentContainerStyle={styles.list}
               data={focusHistory}
               renderItem={HistoryItem}
               keyExtractor={focusHistory.key}
@@ -43,9 +43,19 @@ const styles = StyleSheet.create({
     fontSize: fontSizes.md,
   }),
 
+  container: {
+    flex: 0.5,
+    alignItems: 'center',
+  },
+
   title: {
     color: colors.white,
     fontSize: fontSizes.lg,
+  },
+
+  list: {
+    flex: 1,
+    alignItems: 'center',
   },
 
   clearContainer: {
