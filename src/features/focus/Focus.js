@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontWeight: 'bold',
     fontSize: fontSizes.lg,
-    justifyContent: 'center',
+    textAlign: 'center',
   },
 
   inputContainer: {

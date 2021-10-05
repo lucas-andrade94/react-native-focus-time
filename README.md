@@ -56,6 +56,7 @@ npm start
 ### Screens
 <div align="center">
     <img alt="Activity Screen" title="Activity Screen" src=".github\screen-1.jpg?raw=true" width="200px" />
-    <img alt="Timer Screen" title="Timer Screen" src=".github\screen-2.jpg?raw=true" width="200px" />
+    <img alt="Activity Screen" title="Activity Screen" src=".github\screen-2.jpg?raw=true" width="200px" />
     <img alt="Timer Screen" title="Timer Screen" src=".github\screen-3.jpg?raw=true" width="200px" />
+    <img alt="Timer Screen" title="Timer Screen" src=".github\screen-4.jpg?raw=true" width="200px" />
 </div>
